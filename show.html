@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hershey Ball</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/show.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">Hershey Ball</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#page-header">Scoreboard</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#game-headlines">Featured Games</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#league-stats">League Leaders</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	
+	<nav id="page-buttons" class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<ul class="nav navbar-nav list-inline">
+				<li class="active"><a href="#">Games <span class="sr-only">(current)</span></a></li>
+				<li><a href="#">Scores & Schedules</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Players</a></li>
+				<li><a href="#">Standings</a></li>
+				<li><a href="#">Stats</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <i class="fa fa-angle-down"></i></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">2016 EAST</a></li>
+						<li><a href="#">2016 WEST</a></li>
+					</ul>
+				</li>
+		    </ul>
+		</div>
+	</nav>
+    
+    <!-- Little infographics -->
+    <section id="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="dayScoreboard">
+                    <div class="dateline">
+                    Mon. Apr 18
+                    </div>
+                    <div class="tiles">
+                        <div class="gameTile">
+                            <a href="#">
+                                <div class="gameStatus">Game 1: Final</div>
+                                <div class="gameSeries">EAST Leads 1-0</div>
+                                <div class="gameLocation">Hershey Centre</div>
+                                <div class="matchup">
+                                    <div class="visitorTeam">
+                                        <img class="img-responsive" src="assets/images/WEST_logo.svg">
+                                        <div class="gameScore">
+                                        09
+                                        </div>
+                                    </div>
+                                    <div class="homeTeam">
+                                        <img class="img-responsive" src="assets/images/EAST_logo.svg">
+                                        <div class="gameScore">
+                                        11
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <hr>
+    
+    <section id="game-headlines">
+        <section id="recent-news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="breaking-news">
+                            <!-- <h3>Recent News</h3> -->
+                            
+                            <ul class="list-inline breaking-news-list">
+                                <li><a href="javascript:void(0);"><i class="fa fa-bars"></i></a></li>
+                                <li><a href="#">East beat West in Game 1</a></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="recent-games">
+            <div class="container">
+                <div class="game-panel">
+					<div class="row">
+						<div>
+
+						  <!-- Nav tabs -->
+						  <ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active"><a href="#game-highlights" aria-controls="game highlights" role="tab" data-toggle="tab">Highlights</a></li>
+							<li role="presentation"><a href="#game-footage" aria-controls="game footage" role="tab" data-toggle="tab">Full Game Footage</a></li>
+						  </ul>
+
+						  <!-- Tab panes -->
+						  <div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="game-highlights">
+								<div class="row">
+									<div class="col-md-10">
+										<!-- 16:9 aspect ratio -->
+										<div class="embed-responsive embed-responsive-16by9">
+										  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tfPSP9en-1E" allowfullscreen="1"></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="game-footage">
+								<div class="row">
+									<div class="col-md-8">
+										<!-- 16:9 aspect ratio -->
+										<div class="embed-responsive embed-responsive-16by9">
+										  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nL8joTq_ufQ" allowfullscreen="1"></iframe>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						  </div>
+
+						</div>
+					</div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!--
+    <section id="video-hero-2" class="video-hero wh">
+        <div class="section-overlay-hard" data-start="background: rgba(0, 0, 0, .4);" data-80p="background: rgba(0, 0, 0, 1);">
+            <div class="float-content" data-start="opacity: 1; margin-top: 0%;" data-80p="opacity: 0; margin-top: 15%;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 text-center light">
+                            <img class="img-responsive wow fadeInUp" data-wow-delay=".2s" src="img/framer-logo-2-light.png" alt="">
+                            <div class="divide-xs"></div>
+                            <h2 class="lead wow fadeInUp" data-wow-delay=".4s">Superb for Companies</h2>
+                            <p class="smoke wow fadeInUp" data-wow-delay=".6s">None of the components depends of layout, use them separately or as complete section. Copy your content in to new, modern design and refresh your brand.</p>
+                            <a href="#menu" class="btn-underline btn-strong-style white wow fadeInUp" data-wow-delay=".8s">See menu</a>
+                            <div class="horizontal-divider"></div>
+                            <a href="#gmap" class="btn-underline btn-strong-style white wow fadeInUp" data-wow-delay=".8s">Order now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Weekly Stats Section -->
+    <!-- 
+    <section id="weekly-stats" class="weekly-stats-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 style="padding:35px 0;">Player Cards</h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="player-card">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="row">
+                                        
+                                            <div class="player-card-stats">
+                                                <div class="col-xs-3">
+                                                    <div class="player-profile-picc">
+                                                        <img class="img-responsive" src="assets/images/abdu-profile-pic.jpg">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-1" style="padding:0;">
+                                                    <div class="player-number">
+                                                        35
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-5">
+                                                    <div class="player-info">
+                                                        <h2 class="player-name"><a href="#">Abdu Gassim</a></h2>
+                                                        <h3 class="player-summary">G / <a href="#">Oklahoma City Thunder</a></h3>
+                                                        <div class="player-bio">
+                                                            <div class="player-bio-text">155 lbs / 6 ft 2</div>
+                                                            <div class="player-bio-text">Age: 24</div>
+                                                            <div class="player-bio-text">Born: 12/12/91</div>
+                                                            <div class="player-bio-text">By Day: Accountant</div>
+                                                            <div class="player-bio-text">School: UTM</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <div class="player-teamlogo">
+                                                        <a href="#"><img class="img-responsive" src="assets/images/OKC_logo.svg"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="stats-summary-row">
+                                            <div class="row">
+                                                <div class="col-sm-8 col-sm-offset-4 col-xs-12">
+                                                    <div class="col-sm-4">
+                                                        <div class="stats-summary-item">
+                                                            <sup class="label">PTS</sup>
+                                                            04
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="stats-summary-item">
+                                                            <sup class="label">REB</sup>
+                                                            04
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="stats-summary-item">
+                                                            <sup class="label">AST</sup>
+                                                            03
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="player-card">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="player-card-stats">
+                                            <div class="player-profile-pic">
+                                                <img class="img-responsive" src="assets/images/default-profile-image.png">
+                                            </div>
+                                            <div class="player-number">
+                                                15
+                                            </div>
+                                            <div class="player-info">
+                                                <h2 class="player-name">Mohamed Ashkar</h2>
+                                                <h3 class="player-summary">C-F / <a href="#">Sacramento Kings</a></h3>
+                                            
+                                                <div class="player-bio">
+                                                    <div class="player-bio-text">215 lbs / 6 ft 2</div>
+                                                    <div class="player-bio-text">Age: 25</div>
+                                                    <div class="player-bio-text">Born: 06/10/90</div>
+                                                    <div class="player-bio-text">By Day: Boyfriend</div>
+                                                    <div class="player-bio-text">School: Scarlett Heights</div>
+                                                </div>
+                                            
+                                            </div>
+                                            <div class="player-teamlogo">
+                                                <a href="#"><img class="img-responsive" src="assets/images/SAC_logo.svg"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="stats-summary-row">
+                                            <div class="row">
+                                                <div class="col-sm-8 col-sm-offset-4 col-xs-12">
+                                                    <div class="stats-summary-item">
+                                                        <sup class="label">PTS</sup>
+                                                        08
+                                                    </div>
+                                                    <div class="stats-summary-item">
+                                                        <sup class="label">REB</sup>
+                                                        04
+                                                    </div>
+                                                    <div class="stats-summary-item">
+                                                        <sup class="label">AST</sup>
+                                                        00
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="player-card">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="player-card-stats">
+                                            <div class="player-profile-pic">
+                                                <img class="img-responsive" src="assets/images/zak-profile-pic.jpg">
+                                            </div>
+                                            <div class="player-number">
+                                                00
+                                            </div>
+                                            <div class="player-info">
+                                                <h2 class="player-name">Zakaria 'Harden' Abdulle</h2>
+                                                <h3 class="player-summary">SF / <a href="#">Detroit Pistons</a></h3>
+                                            
+                                                <div class="player-bio">
+                                                    <div class="player-bio-text">205 lbs / 6 ft 0</div>
+                                                    <div class="player-bio-text">Age: 25</div>
+                                                    <div class="player-bio-text">Born: NA</div>
+                                                    <div class="player-bio-text">By Day: Politician</div>
+                                                    <div class="player-bio-text">School: University of Toronto Missisauga</div>
+                                                </div>
+                                            
+                                            </div>
+                                            <div class="player-teamlogo">
+                                                <a href="#"><img class="img-responsive" src="assets/images/DET_logo.svg"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="stats-summary-row">
+                                            <div class="row">
+                                                <div class="col-sm-8 col-sm-offset-4 col-xs-12">
+                                                    <div class="stats-summary-item">
+                                                        <sup class="label">PTS</sup>
+                                                        08
+                                                    </div>
+                                                    <div class="stats-summary-item">
+                                                        <sup class="label">REB</sup>
+                                                        00
+                                                    </div>
+                                                    <div class="stats-summary-item">
+                                                        <sup class="label">AST</sup>
+                                                        01
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="player-card">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="player-card-stats">
+                                            <div class="player-profile-pic">
+                                                <img class="img-responsive" src="assets/images/default-profile-image.png">
+                                            </div>
+                                            <div class="player-number">
+                                                01
+                                            </div>
+                                            <div class="player-info">
+                                                <h2 class="player-name">Fahad Gassim</h2>
+                                                <h3 class="player-summary">G / <a href="#">Chicago Bulls</a></h3>
+                                            
+                                                <div class="player-bio">
+                                                    <div class="player-bio-text">180 lbs / 6 ft 1</div>
+                                                    <div class="player-bio-text">Age: 25</div>
+                                                    <div class="player-bio-text">Born: 12/19/90</div>
+                                                    <div class="player-bio-text">By Day: Wastemon</div>
+                                                    <div class="player-bio-text">School: Scarlett Heights</div>
+                                                </div>
+                                            
+                                            </div>
+                                            <div class="player-teamlogo">
+                                                <a href="#"><img class="img-responsive" src="assets/images/CHI_logo.svg"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="stats-summary-row">
+                                            <div class="row">
+                                                <div class="col-sm-8 col-sm-offset-4 col-xs-12">
+                                                    <div class="stats-summary-item">
+                                                        <sup class="label">PTS</sup>
+                                                        08
+                                                    </div>
+                                                    <div class="stats-summary-item">
+                                                        <sup class="label">REB</sup>
+                                                        03
+                                                    </div>
+                                                    <div class="stats-summary-item">
+                                                        <sup class="label">AST</sup>
+                                                        02
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="clearfix"></div>
+                        
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="player-card">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="player-card-stats">
+                                            <div class="player-profile-pic">
+                                                <img class="img-responsive" src="assets/images/default-profile-image.png">
+                                            </div>
+                                            <div class="player-number">
+                                                13
+                                            </div>
+                                            <div class="player-info">
+                                                <h2 class="player-name"><a href="#">Mahamed 'Harden' Ahmed</a></h2>
+                                                <h3 class="player-summary">G / <a href="#">Houston Rockets</a></h3>
+                                            
+                                                <div class="player-bio">
+                                                    <div class="player-bio-text">215 lbs / 6 ft 0</div>
+                                                    <div class="player-bio-text">Age: Looool</div>
+                                                    <div class="player-bio-text">Born: 01/01/01</div>
+                                                    <div class="player-bio-text">By Day: Superhero</div>
+                                                    <div class="player-bio-text">School: Scarlett Heights</div>
+                                                </div>
+                                            
+                                            </div>
+                                            <div class="player-teamlogo">
+                                                <a href="#"><img class="img-responsive" src="assets/images/HOU_logo.svg"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="stats-summary-row">
+                                            <div class="row">
+                                                <div class="col-sm-8 col-sm-offset-4 col-xs-12">
+                                                    <div class="stats-summary-item">
+                                                        <sup class="label">PTS</sup>
+                                                        02
+                                                    </div>
+                                                    <div class="stats-summary-item">
+                                                        <sup class="label">REB</sup>
+                                                        01
+                                                    </div>
+                                                    <div class="stats-summary-item">
+                                                        <sup class="label">AST</sup>
+                                                        01
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- League Stats Section -->
+    <section id="league-stats" class="league-stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="section-header-text">
+                        <p>REGULAR SEASON</p>
+                        <hr align="left" class="hr-small">
+                        <h1 class="week-1">League Leaders</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="player-card">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                            <div class="player-card-stats">
+                                                <div class="col-md-4 col-sm-4 col-xs-4" style="padding-left:0;">
+                                                    <div class="player-profile-picc">
+                                                        <img class="img-responsive" src="assets/images/abdu-profile-pic.jpg">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-1" style="padding:0;">
+                                                    <div class="player-number">
+                                                        35
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-7 col-sm-7 col-xs-7">
+                                                    <div class="player-info">
+                                                        <h2 class="player-name"><a href="#">Abdu Gassim</a></h2>
+                                                        <h3 class="player-summary">G / <a href="#">Oklahoma City Thunder</a></h3>
+                                                        <div class="player-bio">
+                                                            <div class="player-bio-text">155 lbs / 6 ft 2</div>
+                                                            <div class="player-bio-text">Age: 24</div>
+                                                            <div class="player-bio-text" style="display:none;">Born: 12/12/91</div>
+                                                            <div class="player-bio-text" style="display:none;">By Day: Accountant</div>
+                                                            <div class="player-bio-text" style="display:none;">School: UTM</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hidden-xs hidden-sm hidden-md col-lg-3 col-md-2">
+                                                    <div class="player-teamlogo">
+                                                        <a href="#"><img class="img-responsive" src="assets/images/OKC_logo.svg"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                            <div class="stats-summary-row">
+                                                <div class="row">
+                                                    <div class="col-sm-8 col-sm-offset-4 col-xs-10 col-xs-offset-1">
+                                                        <div class="col-sm-4">
+                                                            <div class="stats-summary-item">
+                                                                <sup class="label">PTS</sup>
+                                                                10
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <div class="stats-summary-item">
+                                                                <sup class="label">REB</sup>
+                                                                5
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <div class="stats-summary-item">
+                                                                <sup class="label">AST</sup>
+                                                                3
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="player-card">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                            <div class="player-card-stats">
+                                                <div class="col-md-4 col-sm-4 col-xs-4" style="padding-left:0;">
+                                                    <div class="player-profile-picc">
+                                                        <img class="img-responsive" src="assets/images/zak-profile-pic.jpg">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-1" style="padding:0;">
+                                                    <div class="player-number">
+                                                        35
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4 col-md-7 col-sm-7 col-xs-7">
+                                                    <div class="player-info">
+                                                        <h2 class="player-name"><a href="#">Zakaria A</a></h2>
+                                                        <h3 class="player-summary">G / <a href="#">Houston Rockets</a></h3>
+                                                        <div class="player-bio">
+                                                            <div class="player-bio-text">185 lbs / 6 ft 0</div>
+                                                            <div class="player-bio-text" style="display:none;">Age: 24</div>
+                                                            <div class="player-bio-text" style="display:none;">Born: 12/12/91</div>
+                                                            <div class="player-bio-text" style="display:none;">By Day: Accountant</div>
+                                                            <div class="player-bio-text" style="display:none;">School: UTM</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="hidden-xs hidden-sm hidden-md col-lg-3 col-md-2">
+                                                    <div class="player-teamlogo">
+                                                        <a href="#"><img class="img-responsive" src="assets/images/HOU_logo.svg"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                            <div class="stats-summary-row">
+                                                <div class="row">
+                                                    <div class="col-sm-8 col-sm-offset-4 col-xs-10 col-xs-offset-1">
+                                                        <div class="col-sm-4">
+                                                            <div class="stats-summary-item">
+                                                                <sup class="label">PTS</sup>
+                                                                14
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <div class="stats-summary-item">
+                                                                <sup class="label">REB</sup>
+                                                                4
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <div class="stats-summary-item">
+                                                                <sup class="label">AST</sup>
+                                                                1
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!--
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                    <div class="stat-sheet">
+                            <div class="table-heading">
+                                Regular Season
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th class="first-th">Player</th>
+                                    <th class="first-th">Team</th> 
+                                    <th>PTS</th>
+                                    <th>FGM</th>
+                                    <th>FGA</th>
+                                    <th>FG%</th>
+                                    <th>REB</th>
+                                    <th>AST</th>
+                                    <th>STL</th>
+                                    <th>BLK</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td class="first-td">Abdu Gassim</td>
+                                    <td class="first-td">Oklahoma City Thunder</td> 
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>9</td>
+                                    <td>22.2%</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>-</td>
+                                    <td>1</td>
+                                  </tr> 
+                                  <tr>
+                                    <td class="first-td">Zakaria Abdulle</td>
+                                    <td class="first-td">Detroit Pistons</td> 
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td><span style="color:#8BC34A;">100.0%</span></td>
+                                    <td>-</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>-</td>
+                                  </tr>
+                                  <tr style="border-bottom:1px solid black;">
+                                    <td class="first-td">Mahamed Ahmed</td>
+                                    <td class="first-td">Houston Rockets</td> 
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>3</td>
+                                    <td>33.3%</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>-</td>
+                                    <td>1</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="first-td">Mohamed Ashkar</td>
+                                    <td class="first-td">Sacramento Kings</td> 
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>7</td>
+                                    <td>57.1%</td>
+                                    <td>4</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="first-td">Fahad Gassim</td>
+                                    <td class="first-td">Chicago Bulls</td> 
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>80.0%</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="first-td">Guest 1</td>
+                                    <td class="first-td">N/A</td> 
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>11</td>
+                                    <td>18.2%</td>
+                                    <td>4</td>
+                                    <td>-</td>
+                                    <td>1</td>
+                                    <td>-</td>
+                                  </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1CP4xV1AZBU" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <!-- <section id="videos" class="videos-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="section-header-text">
+                        <p>Week 1</p>
+                        <hr align="left" class="hr-small">
+                        <h1 class="week-1">Week 1 Warm Up Game</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">	
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Rvt5rimM6dY"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- Footer -->
+    <section id="affiliates-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12" style="left:20px;">
+                    <hr class="dark-hr">
+                        <div class="roww divide-sm">
+                            <div class="col-sm-4 col-xs-11">
+                                <h5>Say hello</h5>
+                                <!-- <h3>Contact us.</h3> -->
+                                <p>Connect with us on Facebook, Twitter, and LinkedIn</p>
+                                <p></p>
+                            </div>
+                            <div class="col-sm-4 col-xs-11">
+                                <h5>Read more</h5>
+                                <!-- <h3>Our Blog.</h3> -->
+                                <p>Read up on our latest news and events.</p>
+                            </div>
+                            <div class="col-sm-4 col-xs-11">
+                                <h5>Contact Us</h5>
+                                <!-- <h3>Something.</h3> -->
+                                <p>Etobicoke, Toronto, ON <span style="font-weight:400;">fahadgassim@gmail.com</span></p>
+                            </div>
+                        </div>
+                    <hr class="dark-hr">
+                </div>
+            </div>
+            <div class="row">
+                <div class="affiliates-below">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
+                                <!-- <h5>Follow us on </h5> -->
+                                <ul class="social-network social-circle">
+                                    <!--<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li> -->
+                                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    
+    <!-- Main Scripts -->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

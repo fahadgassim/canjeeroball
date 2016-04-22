@@ -1,0 +1,717 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+    -webkit-font-smoothing: antialiased;
+    background:#EBEBEB;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+of those sections to manage the look and feel of the site. */
+
+.hr-small{
+    width:50px;
+    border-top:2px solid #2B2B2B;
+    margin-top:0px;
+}
+
+.week-1{
+    text-align:left;
+    color:#111;
+    padding-bottom:35px;
+    font-size:36px;
+}
+
+.headline h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-default{
+    background:#37474F;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-family: 'Montserrat', sans-serif;
+    color:#fff;
+    text-transform:uppercase;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:active {
+    color:#eee;
+}
+
+.navbar-default .navbar-brand {
+    color:#fff;
+}
+
+.top-nav-collapse{
+    background-color:#37474F;
+}
+
+.intro-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.weekly-stats-section {
+    padding-top: 35px;
+    text-align: center;
+    background: #fff;
+}
+
+.league-stats-section {
+    padding-top: 35px;
+    padding-bottom:135px;
+    text-align: center;
+    background: #eee;
+}
+
+.videos-section {
+    padding-top: 35px;
+    text-align: center;
+    background: #fff;
+}
+
+.homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+  display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important;
+}
+.video-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+.video-container .poster img {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+.video-container .filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+}
+.video-container .title-container {
+  z-index: 1000;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.video-container .description .inner {
+  font-size: 1em;
+  width: 45%;
+  margin: 0 auto;
+}
+.video-container .link {
+  position: absolute;
+  bottom: 3em;
+  width: 100%;
+  text-align: center;
+  z-index: 1001;
+  font-size: 2em;
+  color: #fff;
+}
+.video-container .link a {
+  color: #fff;
+}
+.video-container video {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+}
+.video-container video.fillWidth {
+  width: 100%;
+}
+
+.section-header-text{
+    padding:15px 0;
+}
+
+.section-header-text p {
+    text-align:left;
+    text-transform:uppercase;
+    margin-bottom:6px;
+}
+
+/* top page buttons */
+
+
+
+#page-buttons{
+	transition:all .6s ease-in-out;
+	margin-top:90px;
+}
+
+#page-buttons{
+	border-radius:0;
+}
+
+#page-buttons .nav>li{
+	display:inline-block;
+}
+
+#page-buttons .top-nav-collapse{
+	top:-39px !important;
+}
+
+.buttons-move{
+	background:#222;
+	top:-39px;
+}
+
+@media(max-width:767px) {
+	#page-buttons{
+		margin-top:50px;
+	}
+}
+
+/* top header strip */
+.dayScoreboard{
+    width:auto;
+    float:left;
+    padding:13px 11px 5px;
+    border-left: 1px solid #B1B1B1;
+    height:165px;
+}
+
+.dateline{
+    float:left;
+    color:#444;
+    font-weight:bold;
+    font-size:13px;
+    position:relative;
+}
+
+#page-header{
+    /* max-width:1100px; */
+    height:180px;
+    margin:auto;
+    margin-top:195px;
+    margin-bottom:5px;
+    background-color:#EBEBEB;
+    font-size:12px;
+    color:#333;
+}
+
+#page-header h5 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+#page-header .tiles{
+    margin-top:18px;
+}
+
+#page-header .gameTile{
+    padding:3px 2px 9px;
+    float:left;
+    width:320px;
+    /* height:110px; */
+    border:1px solid #c8c7cc;
+    background-color:#fff;
+    text-align:center;
+}
+
+#page-header .gameTile:hover{
+    border:1px solid #000000;
+}
+
+#page-header .visitorTeam{
+    height: 35px;
+    border-bottom:1px solid #c8c7cc;
+    padding-bottom:4px;
+}
+
+#page-header .homeTeam{
+    height:35px;
+    padding-top:2px;
+}
+
+#page-header .matchup{
+    max-width:100px;
+    margin:auto;
+}
+
+#page-header .matchup img{
+    float:left;
+    margin:0 5px;
+    height:32px;
+    width:32px;
+}
+
+#page-header .gameScore{
+    color:#006bb6;
+    font-weight:bold;
+    font-size:22px;
+}
+
+#page-header .gameStatus{
+    color:#006bb6;
+    margin-bottom:2px;
+    font-size:10px;
+    font-weight:bold;
+}
+
+#page-header .gameSeries{
+    font-weight:bold;
+}
+
+#page-header .gameLocation{
+    margin-bottom:4px;
+    color:#767676;
+    font-size:10px;
+}
+
+#page-header a{
+    color:#333;
+}
+
+#page-header a:hover{
+    text-decoration:none;
+}
+
+/* ------ */
+
+/* The Meat */
+
+.tab-pane{
+	padding:15px;
+	background:#fff;
+	border-left:1px solid gainsboro;
+	border-right:1px solid gainsboro;
+	border-bottom:1px solid gainsboro;
+}
+
+#game-headlines{
+	background-color:#9D9D9D;
+	padding-top:12px;
+    padding-bottom:30px;
+}
+
+.breaking-news{
+    border-bottom:1px solid #006bb6;
+    position:relative;
+    height:38px;
+    display:inline-block;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    padding:0;
+    margin:0;
+    width:100%;
+}
+
+.breaking-news h3{
+    margin-top:0;
+}
+
+.breaking-news-list{
+    background:#fff;
+    padding:10px 0;
+    padding-left:15px;
+    margin-right:0;
+}
+
+.breaking-news-list li{
+    padding:0;
+}
+
+.breaking-news-list li:first-child{
+    border-left:0px solid red;
+    content: "";
+    margin-left:9px;
+    padding:0 4px 0 0;
+}
+
+.breaking-news-list li{
+    border-left:1px solid #898989;
+    content: "";
+    margin-left:2px;
+    padding:0 4px 0 6px;
+}
+
+#recent-games .game-panel{
+    position:relative;
+    background-color:#f2f2f2;
+    margin:0;
+    padding:30px;
+}
+
+#recent-games .game-photo{
+    border:1px solid gainsboro;
+    margin-bottom:18px;
+    overflow:hidden;
+    height:200px;
+    width:100%;
+    position:relative;
+}
+
+#recent-games .game-photo:hover{
+    border:1px solid #333;
+}
+
+#recent-games .game-photo img{
+    
+    transition: all 0.2s ease-in-out;
+    min-width:131px;
+}
+
+#recent-games .game-photo img:hover{
+    transform: scale(1.1);
+}
+
+#recent-games .game-photo-caption{
+    position:absolute;
+    height:36px;
+    padding:10px 10px 8px;
+    width:100%;
+    bottom:0;
+    background:rgba(0,0,0,0.7);
+}
+
+#recent-games .game-photo-caption-text h3{
+    margin-top:0;
+    margin-bottom:4px;
+    font-size:1em;
+    color:#fff;
+}
+
+/* player card */
+
+.player-card{
+    border:1px solid gainsboro;
+    margin-bottom:15px;
+    max-width:650.5px;
+    margin:0 auto 15px;
+}
+
+.player-card-stats{
+    background:#fff;
+    overflow:hidden;
+}
+
+.player-profile-pic{
+    display:inline-block;
+    float:left;
+    margin:0;
+    padding-top:20px;
+    max-width:210px;
+    max-height:170px;
+}
+
+.player-profile-pic img{
+    max-width:210px;
+    max-height:170px;
+}
+
+.player-number{
+    font-family: 'Oswald', sans-serif;	
+    float:left;
+    padding-right:10px;
+    margin-top:15px;
+    padding-right:8px;
+    color:#be9d53;
+    font-size:40px;
+    height:80px;
+    line-height:50px;
+    border-right:1px solid #ccc;
+}
+
+.player-info{
+    float:left;
+    width:100%;
+    margin:20px 24px 6px 0;
+    color:#7c7c7c;
+    text-align:left;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.player-name{
+    font-family: 'Oswald', sans-serif;	
+    font-size:2.97rem;
+    margin-top:0;
+    color:#444;
+    text-transform:uppercase;
+}
+
+.player-summary{
+    font-size:1.8rem;
+    margin-top:0;
+    font-weight:400;
+}
+
+.player-bio{
+    font-family: 'Open Sans', sans-serif;
+    color:#58595b;
+    text-align:left;
+    font-size:12px;
+    font-weight:bold;
+    max-width:200px;
+}
+
+.player-bio-text{
+    float:left;
+    padding-right:10px;
+}
+
+.player-teamlogo{
+    max-height:120px;
+    max-width:120px;
+    margin-top:7px;
+    float:left;
+    text-align:center;
+}
+
+.stats-summary-row{
+    position:relative;
+    z-index:999;
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.9em;
+    line-height:45px;
+    color:#333;
+    width:100%;
+    background-color:#f6f6f6;
+}
+
+.stats-summary-row .col-sm-4{
+    padding:0;
+}
+
+.stats-summary-item{
+    font-family: 'Oswald', sans-serif;
+    float:left;
+    padding-right:20px;
+}
+
+.stats-summary-item sup{
+    padding-right:5px;
+    padding-bottom:0px;
+    color:#7c7c7c;
+    font-size:63%;
+}
+
+/* league stats */
+
+.table-heading{
+    font-family: 'Oswald', sans-serif;
+    text-align:left;
+    width:100%;
+    text-transform: uppercase;
+    background-color:#ddd;
+    color:#57595b;
+    font-size:20px;
+    height:45px;
+    line-height:45px;
+    border-bottom:1px solid #be9d53;
+    margin-top:10px;
+    padding-left:15px;
+}
+
+.first-th{
+    text-align:left !important;
+    min-width:150px !important;
+}
+
+.first-td{
+    text-align:left !important;
+}
+
+.stat-sheet{
+    font-family:'Open Sans', sans-serif;
+    font-size:12px;
+}
+
+.stat-sheet .table>thead>tr>th{
+    background:#9a9a9a;
+    line-height:1.75em;
+    font-weight:400;
+    color:#fff;
+    border-bottom:none;
+    text-align:center;
+}
+
+.stat-sheet .table>thead>tr>th:hover{
+    background:#333;
+}
+
+.stat-sheet .table>tbody{
+    background:#fff;
+}
+
+.stat-sheet .table>tbody>tr:hover{
+    background:#eee;
+}
+
+.stat-sheet .table>tbody>tr>td{
+    text-align:center;
+    border-top:none;
+    position:relative;
+    /*background:#fff; */
+}
+
+/* footer */
+/* from old css */
+#affiliates-below{
+    padding:100px 0px 50px;
+    background-color:#313131;
+    color:#fff;
+}
+
+#affiliates-below p{
+    color:#999;
+}
+
+#affiliates-below h3{
+    color:#111;
+    margin-top:12px;
+    margin-bottom:22px;
+}
+
+#affiliates-below h5{
+    text-transform:uppercase;
+    margin-bottom:12px;
+    color:#1CBDAE;
+}
+
+.affiliates-below{
+    padding:50px 0 10px;
+}
+
+.affiliates-below p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:100;
+    font-size:18px;
+    color:#fff;
+}
+
+.affiliates-below .lead {
+    color:#333 !important;
+}
+
+/*=========================
+  Icons
+ ================= */
+
+/* footer social icons */
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left:0 !important;
+    padding: 0;
+}
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+    background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+    background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+    background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+    background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+    background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+    background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+    color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+    color:#44BCDD;
+}
+
+.social-circle li a {
+    display:inline-block;
+    position:relative;
+    margin:0 auto 0 auto;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    text-align:center;
+    width: 50px;
+    height: 50px;
+    font-size:20px;
+}
+.social-circle li i {
+    margin:0;
+    line-height:50px;
+    text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.social-circle i {
+    color: #fff;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
