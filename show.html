@@ -39,7 +39,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top hidden-xs" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -72,27 +72,28 @@
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
+            <nav id="page-buttons" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <ul class="nav navbar-nav list-inline">
+                <li class="active"><a href="#">Games <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Scores & Schedules</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Players</a></li>
+                <li><a href="#">Standings</a></li>
+                <li><a href="#">Stats</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">2016 EAST</a></li>
+                        <li><a href="#">2016 WEST</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </nav>
-	
-	<nav id="page-buttons" class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<ul class="nav navbar-nav list-inline">
-				<li class="active"><a href="#">Games <span class="sr-only">(current)</span></a></li>
-				<li><a href="#">Scores & Schedules</a></li>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Players</a></li>
-				<li><a href="#">Standings</a></li>
-				<li><a href="#">Stats</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <i class="fa fa-angle-down"></i></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">2016 EAST</a></li>
-						<li><a href="#">2016 WEST</a></li>
-					</ul>
-				</li>
-		    </ul>
-		</div>
-	</nav>
+    </nav>
+    
+
     
     <!-- Little infographics -->
     <section id="page-header">
@@ -154,42 +155,243 @@
         <section id="recent-games">
             <div class="container">
                 <div class="game-panel">
-					<div class="row">
-						<div>
+                    <div class="row">
+                        <div class="col-md-7">
+                          <!-- Nav tabs -->
+                          <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#game-highlights" aria-controls="game highlights" role="tab" data-toggle="tab">Highlights</a></li>
+                            <li role="presentation"><a href="#game-footage" aria-controls="game footage" role="tab" data-toggle="tab">Full Game Footage</a></li>
+                          </ul>
 
-						  <!-- Nav tabs -->
-						  <ul class="nav nav-tabs" role="tablist">
-							<li role="presentation" class="active"><a href="#game-highlights" aria-controls="game highlights" role="tab" data-toggle="tab">Highlights</a></li>
-							<li role="presentation"><a href="#game-footage" aria-controls="game footage" role="tab" data-toggle="tab">Full Game Footage</a></li>
-						  </ul>
-
-						  <!-- Tab panes -->
-						  <div class="tab-content">
-							<div role="tabpanel" class="tab-pane active" id="game-highlights">
-								<div class="row">
-									<div class="col-md-10">
-										<!-- 16:9 aspect ratio -->
-										<div class="embed-responsive embed-responsive-16by9">
-										  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tfPSP9en-1E" allowfullscreen="1"></iframe>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div role="tabpanel" class="tab-pane" id="game-footage">
-								<div class="row">
-									<div class="col-md-8">
-										<!-- 16:9 aspect ratio -->
-										<div class="embed-responsive embed-responsive-16by9">
-										  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nL8joTq_ufQ" allowfullscreen="1"></iframe>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						  </div>
-
-						</div>
-					</div>
+                          <!-- Tab panes -->
+                          <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="game-highlights">
+                                <!-- 16:9 aspect ratio -->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tfPSP9en-1E" allowfullscreen="1"></iframe>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="game-footage">
+                                <!-- 16:9 aspect ratio -->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nL8joTq_ufQ" allowfullscreen="1"></iframe>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-5 col-md-offset-0">
+                            <div class="side-stats">
+                                <div class="side-header">
+                                <h3>Game Leaders</h3>
+                                </div>
+                                
+                                <div class="side-content">
+                                    <div class="btn-group btn-group-justified stat-selection" role="group" aria-label="Game Leaders">
+                                      <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-default">Points</button>
+                                      </div>
+                                      <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-default">Rebounds</button>
+                                      </div>
+                                      <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-default">Assists</button>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="first-team">
+                                        <div class="player-image">
+                                            <span class="player-headshot">
+                                                <img class="img-circle" src="assets/images/zaid-profile-small.jpg">
+                                            </span>
+                                        </div>
+                                        <div class="player-container">
+                                            <span class="player-name-small">
+                                                <span class="long-name">Zaid H</span>
+                                                <span class="player-details">G - FA</span>
+                                            </span>
+                                        </div>
+                                        <d1 class="game-leader-details">
+                                            <dd>
+                                                <span class="value">4</span>
+                                                <span class="value-stat">pts</span>
+                                            </dd>
+                                            <dd>
+                                                <span class="value">4/8</span>
+                                                <span class="value-stat">fg</span>
+                                            </dd>
+                                            <dd>
+                                                <span class="value">50%</span>
+                                                <span class="value-stat">pct</span>
+                                            </dd>
+                                        </d1>
+                                    </div>
+                                    
+                                    <div class="second-team">
+                                        <div class="player-image">
+                                            <span class="player-headshot">
+                                                <img class="img-circle" src="assets/images/abdu-profile-small.jpg">
+                                            </span>
+                                        </div>
+                                        <div class="player-container">
+                                            <span class="player-name-small">
+                                                <span class="long-name">Abdu G</span>
+                                                <span class="player-details">G - HOU</span>
+                                            </span>
+                                        </div>
+                                        <d1 class="game-leader-details">
+                                            <dd>
+                                                <span class="value">3</span>
+                                                <span class="value-stat">pts</span>
+                                            </dd>
+                                            <dd>
+                                                <span class="value">3/7</span>
+                                                <span class="value-stat">fg</span>
+                                            </dd>
+                                            <dd>
+                                                <span class="value">43%</span>
+                                                <span class="value-stat">pct</span>
+                                            </dd>
+                                        </d1>
+                                    </div>
+                                    <!--
+                                    <div class="side-footer">
+                                        <a href="#">+ View Full Stats</a>
+                                    </div>
+                                    -->
+                                </div>
+                            </div>
+                            
+                            <div class="side-chart">
+                                <div id="chartdiv"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="stat-sheet">
+                                <div class="table-heading">
+                                    Regular Season
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th class="first-th">Player</th>
+                                        <th class="first-th">Team</th> 
+                                        <th>PTS</th>
+                                        <th>FGM</th>
+                                        <th>FGA</th>
+                                        <th>FG%</th>
+                                        <th>REB</th>
+                                        <th>AST</th>
+                                        <th>STL</th>
+                                        <th>BLK</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td class="first-td">Abdihakim A</td>
+                                        <td class="first-td">2016 East</td> 
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                        <td>25.0%</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                      </tr> 
+                                      <tr>
+                                        <td class="first-td">Mohamed G</td>
+                                        <td class="first-td">2016 East</td> 
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>5</td>
+                                        <td>60.0%</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="first-td">Zaid H</td>
+                                        <td class="first-td">2016 East</td> 
+                                        <td>4</td>
+                                        <td>4</td>
+                                        <td>8</td>
+                                        <td>50.0%</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                      </tr>
+                                      <tr style="border-bottom:1px solid black;">
+                                        <td class="first-td">Zakaria A</td>
+                                        <td class="first-td">2016 East</td> 
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>5</td>
+                                        <td>60.0%</td>
+                                        <td>4</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="first-td">Abdu G</td>
+                                        <td class="first-td">2016 West</td> 
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>7</td>
+                                        <td>42.9%</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="first-td">Ashkar</td>
+                                        <td class="first-td">2016 West</td> 
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                        <td>20.0%</td>
+                                        <td>2</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="first-td">Fahad G</td>
+                                        <td class="first-td">2016 West</td> 
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>11</td>
+                                        <td>18.2%</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="first-td">Liban B</td>
+                                        <td class="first-td">2016 West</td> 
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>75.0%</td>
+                                        <td>5</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                      </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -681,108 +883,9 @@
                 </div>
             </div>
         </div>
+            
+            
             <!--
-            <div class="row">
-                <div class="col-sm-10 col-sm-offset-1 col-xs-12">
-                    <div class="stat-sheet">
-                            <div class="table-heading">
-                                Regular Season
-                            </div>
-                            <div class="table-responsive">
-                                <table class="table">
-                                <thead>
-                                  <tr>
-                                    <th class="first-th">Player</th>
-                                    <th class="first-th">Team</th> 
-                                    <th>PTS</th>
-                                    <th>FGM</th>
-                                    <th>FGA</th>
-                                    <th>FG%</th>
-                                    <th>REB</th>
-                                    <th>AST</th>
-                                    <th>STL</th>
-                                    <th>BLK</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td class="first-td">Abdu Gassim</td>
-                                    <td class="first-td">Oklahoma City Thunder</td> 
-                                    <td>2</td>
-                                    <td>2</td>
-                                    <td>9</td>
-                                    <td>22.2%</td>
-                                    <td>5</td>
-                                    <td>3</td>
-                                    <td>-</td>
-                                    <td>1</td>
-                                  </tr> 
-                                  <tr>
-                                    <td class="first-td">Zakaria Abdulle</td>
-                                    <td class="first-td">Detroit Pistons</td> 
-                                    <td>4</td>
-                                    <td>4</td>
-                                    <td>4</td>
-                                    <td><span style="color:#8BC34A;">100.0%</span></td>
-                                    <td>-</td>
-                                    <td>1</td>
-                                    <td>1</td>
-                                    <td>-</td>
-                                  </tr>
-                                  <tr style="border-bottom:1px solid black;">
-                                    <td class="first-td">Mahamed Ahmed</td>
-                                    <td class="first-td">Houston Rockets</td> 
-                                    <td>1</td>
-                                    <td>1</td>
-                                    <td>3</td>
-                                    <td>33.3%</td>
-                                    <td>1</td>
-                                    <td>1</td>
-                                    <td>-</td>
-                                    <td>1</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="first-td">Mohamed Ashkar</td>
-                                    <td class="first-td">Sacramento Kings</td> 
-                                    <td>4</td>
-                                    <td>4</td>
-                                    <td>7</td>
-                                    <td>57.1%</td>
-                                    <td>4</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="first-td">Fahad Gassim</td>
-                                    <td class="first-td">Chicago Bulls</td> 
-                                    <td>4</td>
-                                    <td>4</td>
-                                    <td>5</td>
-                                    <td>80.0%</td>
-                                    <td>3</td>
-                                    <td>2</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                  </tr>
-                                  <tr>
-                                    <td class="first-td">Guest 1</td>
-                                    <td class="first-td">N/A</td> 
-                                    <td>2</td>
-                                    <td>2</td>
-                                    <td>11</td>
-                                    <td>18.2%</td>
-                                    <td>4</td>
-                                    <td>-</td>
-                                    <td>1</td>
-                                    <td>-</td>
-                                  </tr>
-                                </tbody>
-                                </table>
-                            </div>
-                    </div>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-sm-10 col-sm-offset-1 col-xs-12">
                     <div class="embed-responsive embed-responsive-16by9">
@@ -820,7 +923,7 @@
     <section id="affiliates-below">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12" style="left:20px;">
+                <div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12" style="left:0px;">
                     <hr class="dark-hr">
                         <div class="roww divide-sm">
                             <div class="col-sm-4 col-xs-11">
@@ -837,10 +940,9 @@
                             <div class="col-sm-4 col-xs-11">
                                 <h5>Contact Us</h5>
                                 <!-- <h3>Something.</h3> -->
-                                <p>Etobicoke, Toronto, ON <span style="font-weight:400;">fahadgassim@gmail.com</span></p>
+                                <p>Etobicoke, Toronto, ON<br><span style="font-weight:400;">fahadgassim@gmail.com</span></p>
                             </div>
                         </div>
-                    <hr class="dark-hr">
                 </div>
             </div>
             <div class="row">
@@ -858,7 +960,8 @@
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
+        <div id="mobile-check" class="hidden-xs"></div>
     </section>
 
     <!-- jQuery -->
@@ -867,12 +970,19 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+    <!-- AM Chart -->
+    <script src="amcharts/amcharts.js"></script>
+    <script src="amcharts/serial.js"></script>
+    <script src="amcharts/themes/light.js"></script>
+
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
     
     <!-- Main Scripts -->
-    <script src="js/scripts.js"></script>
+    <script src="js/show.js"></script>
+    
+
 
 </body>
 

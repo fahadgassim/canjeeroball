@@ -1,18 +1,28 @@
 //jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
+    
+    var is_mobile = false;
+
+    if( $('#mobile-check').css('display')=='none') {
+        is_mobile = true;       
+    }
+
+    // now i can use is_mobile to run javascript conditionally
+    
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
-    } else {
-        $(".navbar-fixed-top").removeClass("top-nav-collapse");
-    }
-});
-
-//jQuery to collapse second navbar
-$(window).scroll(function() {
-    if ($("#page-buttons").offset().top > 150) {
         $("#page-buttons").addClass("top-nav-collapse buttons-move");
     } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
         $("#page-buttons").removeClass("top-nav-collapse buttons-move");
+    }
+    
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent) == false) {
+        if ($(".navbar").offset().top > 50) {
+            $("#page-buttons").addClass("top-nav-collapse buttons-move");
+        } else {
+            $("#page-buttons").removeClass("top-nav-collapse buttons-move");
+        }
     }
 });
 
